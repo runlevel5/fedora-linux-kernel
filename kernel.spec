@@ -94,7 +94,7 @@ Summary: The Linux kernel
 %if 0%{?released_kernel}
 
 # Do we have a -stable update to apply?
-%define stable_update 25
+%define stable_update 26
 # Set rpm version accordingly
 %if 0%{?stable_update}
 %define stablerev %{stable_update}
@@ -2965,6 +2965,9 @@ fi
 #
 #
 %changelog
+* Fri Apr 02 2021 Trung Lê <trung.le@ruby-journal.com> - 5.10.26-200
+- Linux v5.10.26
+
 * Thu Mar 26 2021 Trung Lê <trung.le@ruby-journal.com> - 5.10.25-200
 - Linux v5.10.25
 
